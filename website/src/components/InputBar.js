@@ -19,7 +19,6 @@ const InputBar = ({ message, setMessage, sendMessage }) => {
         var base64String = window.btoa(binaryData);
         //showing file converted to base64
         setMessage({image: base64String, text:''});
-        alert('File converted to base64 successfuly!\nCheck in Textarea');
       };
     })(f);
     // Read in the image file as a data URL.

@@ -46,7 +46,9 @@ const Chat = ({ location }) => {
             socket.emit('sendMessage', message, () => setMessage({text:'',image: null}));
         }
     }
- 
+    const removeuser = (event) => {
+             socket.emit('disconnect', users,)
+    }
     console.log(message)
     return (
         <div className="outerContainer">
