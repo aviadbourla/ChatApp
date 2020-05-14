@@ -1,0 +1,206 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+  
+  .squre {
+    background: white;
+    border: 1px solid black;
+    background-image: url(https://previews.123rf.com/images/juliarstudio/juliarstudio1703/juliarstudio170300347/73501762-soldier-icon-cartoon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  .squretwo {
+    background: white;
+    border: 1px solid black;
+    background-image: url(https://icons-for-free.com/iconfiles/png/512/soldier+icon-1320184414431718781.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  .squreblank {
+    background: white;
+    border: 1px solid black;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  .squrewin {
+    background: white;
+    border: 1px solid black;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/awards-and-achievements/100/award_win_trophy-02-512.png);
+    background-size: 40%;
+    background-size: cover;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  .squreloser {
+    background: white;
+    border: 1px solid black;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/halloween-icon-t-event-flat/64/Halloween-Line-Tombstone-512.png);
+    background-size: 40%;
+    background-size: cover;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  .squre:hover {
+    border: 2px solid black;
+  }
+  
+  .squretwo:hover {
+    border: 2px solid black;
+  }
+  
+  .squrespecial {
+    background-color: red;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  .modal {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background-color:black;  
+    height: 500px;
+    width: 632px;
+  }
+  
+  .rock {
+    background: white;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+    background-image: url(https://cs.wellesley.edu/~mhardy2/protected/hw8/images/rock.png);
+    background-position: center;
+    background-size: 40%;
+    background-size: cover;
+  }
+  .Scissors {
+    background: white;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+      background-image: url(https://cs.wellesley.edu/~mhardy2/protected/hw8/images/scissors.png);
+    background-size: 40%;
+    background-position: center;
+    background-size: cover;
+  }
+  .paper {
+    background: white;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+      background-image: url(https://cs.wellesley.edu/~mhardy2/protected/hw8/images/paper.png);
+     background-size: cover;
+  }
+  .paper:hover{
+    border: 3px solid red;
+  }
+  .Scissors:hover{
+    border: 3px solid red;
+  }
+  .rock:hover,
+  .rock:active{
+    border: 3px solid red;
+  }
+  
+  .startbutoon {
+     border: 1px solid black;
+     width: 130px;
+    height: 100%;
+    background-image: url(https://i.dlpng.com/static/png/6667120_thumb.png);
+     background-position: center;
+    background-size: cover;
+  }
+  .mainbutooncontiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonscontinerdown{
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+  }
+  .buttonscontiner{
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+  }

@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  border-top: 2px solid #D3D3D3;
+  height: 40px;
+}
+
+.input {
+  border: none;
+  width: 80%;
+  font-size: 1.2em;
+  border-radius: 20%;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+.sendicon {
+  display: flex;
+  margin: auto;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(49, 103, 197);
+  /* padding: 20px; */
+  display: inline-block;
+  border: none;
+  width: 30%;
+}
+.dialogg{
+  position: absolute;
+  bottom: 180px;
+  right: 590px;
+}
+.image{
+  width: 30px;
+  height: 30px;
+   
+}
+
+ 

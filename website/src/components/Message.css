@@ -1,0 +1,95 @@
+
+*{
+  font-family: 'Jost', sans-serif;
+}
+.messageBox {
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    max-width: 80%;
+  }
+  
+  .messageText {
+    width: 100%;
+    letter-spacing: 0;
+    float: left;
+    font-size: 0.8em;
+    word-wrap: break-word;
+    
+  }
+  
+  .messageText img {
+    vertical-align: middle;
+  }
+  
+  .messageContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    margin-top: 3px;
+  
+  }
+  
+  .sentText {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    color:black;
+    letter-spacing: 0.3px;
+  }
+  
+  .pl-10k {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .pr-10 {
+    padding-right: 5px;
+    margin: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .justifyStart {
+    justify-content: flex-start;
+  }
+  
+  .justifyEnd {
+    justify-content: flex-end;
+  }
+  
+  .colorWhite {
+    color: white;
+  }
+  
+  .colorDark {
+    color: black;
+  }
+  
+  .backgroundBlue {
+    background: #79C7C5;
+  }
+  
+  .backgroundLight {
+    background: #7777775e;
+  }
+
+  .usernameChat {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  
+  .useravaterChat {
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .image{
+    width: 100px;
+    height: 100px;
+  }

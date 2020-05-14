@@ -1,0 +1,101 @@
+ .main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 5rem;
+ }
+
+ .mainform {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+     width: 300px;
+     background-color: white;
+     border-radius: 14px;
+     box-shadow: 0px -2px 16px 4px rgb(38, 41, 41);
+     margin: 20px;
+ }
+
+ .inputMain {
+     border: none;
+     border: 1px solid rgb(16, 94, 91);
+     border-radius: 15px;
+     padding: 0.6rem;
+     margin: 0.5rem;
+     color: black;
+     margin: 15px;
+     text-align: center;
+ }
+
+ 
+ .mainavater{
+     color: red;
+     width: 100px !important;
+     height: 100px !important;
+   }
+
+ .inputMain:hover {
+     border: 1px solid #79C7C5;
+ }
+
+ .wechat {
+     text-decoration: underline;
+ }
+
+ .inputs {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 1rem;
+ }
+
+ .btn {
+     box-shadow: 1px -1px 5px 0px #79C7C5;
+     background-color: #79C7C5;
+     border-radius: 28px;
+     border: 1px solid #79C7C5;
+     display: inline-block;
+     cursor: pointer;
+     color: #ffffff;
+     font-size: 20px;
+     padding: 3px 10px;
+     margin-top: 1.8rem;
+     text-decoration: none;
+     text-shadow: 0px 0px 15px #79C7C5;
+ }
+
+ .btn:disabled:hover{
+     cursor:no-drop;
+     background-color: #79C7C5;
+ }
+ .btn:hover {
+     background-color: rgb(85, 151, 149);
+ }
+
+ .btn:active {
+     position: relative;
+     top: 1px;
+ }
+
+ .gritings {
+     color: rgb(13, 102, 99);
+     padding: 1rem;
+     margin-top: 0;
+     margin-bottom: 60px;
+ }
+
+ /* 
+ .image {
+     background-image: url("https://image.freepik.com/free-vector/business-professionals-group-business-people-analyzing-data-using-computer-office-people-helping-one-their-colleague-team-work-cartoon-illustration-isolated-white-background_147064-60.jpg");
+     background-position: center;
+     background-size: cover;
+     width: 300px;
+     height: 300px;
+     margin-right: 10rem;
+     border-top: 1px solid #79C7C5;
+
+ } */
