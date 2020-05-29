@@ -9,7 +9,7 @@ import './join.css';
 const Join = () => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
-    return (
+     return (
         <div className="main">
             <h1 className="wechat">WeChat </h1>
             <div className="mainform">

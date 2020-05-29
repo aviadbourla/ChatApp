@@ -5,24 +5,34 @@ import './chat.css';
 import InfoBar from './InfoBar';
 import InputBar from './InputBar';
 import Messages from './Messages';
+import { useHistory } from "react-router-dom";
 
- 
+
 let socket;
 
 const Chat = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
     const [messages, setMessages] = useState([]);
-    const [message, setMessage] = useState({text: '',image: null});
+    const [message, setMessage] = useState({ text: '', image: null });
     const [users, setusers] = useState([]);
+    let history = useHistory();
+
 
     const ENDPOINT = 'localhost:4000'
     useEffect(() => {
+        console.log(location);
         const { name, room } = quertString.parse(location.search)
         socket = io(ENDPOINT);
         setName(name);
         setRoom(room);
-        socket.emit('join', { name, room })
+        socket.emit('join', { name, room }, (error) => {
+            if (error) {
+                alert(error);
+                history.goBack();
+            }
+        }
+        )
         return () => {
             socket.emit('disconnect');
             socket.off();
@@ -36,28 +46,28 @@ const Chat = ({ location }) => {
     }, [messages])
 
     useEffect(() => {
-        socket.on('roomData', ({users}) => {
+        socket.on('roomData', ({ users }) => {
             setusers(users)
         })
     }, [users])
 
     const sendMessage = (event) => {
         if (message) {
-            socket.emit('sendMessage', message, () => setMessage({text:'',image: null}));
+            socket.emit('sendMessage', message, () => setMessage({ text: '', image: null }));
         }
     }
     const removeuser = (event) => {
-             socket.emit('disconnect', users,)
+        socket.emit('disconnect', users)
     }
     console.log(message)
     return (
         <div className="outerContainer">
             <div className="container">
                 <InfoBar room={room} name={name} users={users} />
-                <Messages messages={messages} name={name}/>
-                <InputBar message={message} setMessage={setMessage} sendMessage={sendMessage}  />
-              </div>
-         </div>
+                <Messages messages={messages} name={name} />
+                <InputBar message={message} setMessage={setMessage} sendMessage={sendMessage} />
+            </div>
+        </div>
 
     )
 }
