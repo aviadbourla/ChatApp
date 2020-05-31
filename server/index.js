@@ -1,6 +1,7 @@
 const express = require('express');
 const socketio = require('socket.io')
 const http = require('http');
+const cors = require('cors');
 
 const { addUsers, removeUser, getUser, getUsersinRoom } = require('./users')
 
@@ -10,7 +11,6 @@ const router = require('./router')
 
 const server = http.createServer(app);
 const io = socketio(server);
-
 var app = express(router)
 
 
